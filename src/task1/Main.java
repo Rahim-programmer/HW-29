@@ -1,4 +1,7 @@
-package kz.attractor.java;
+package task1;
+
+import task1.Printer;
+import task1.Cat;
 
 public class Main {
 

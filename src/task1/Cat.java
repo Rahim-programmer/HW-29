@@ -1,4 +1,4 @@
-package kz.attractor.java;
+package task1;
 
 import java.util.List;
 import java.util.Random;
@@ -10,7 +10,7 @@ import java.util.stream.Stream;
     // блок import и поменять имя пакета
     // в остальных местах этого файла код менять не разрешается.
 
-final class Cat {
+public final class Cat {
     private static final Random r = new Random();
     private static final List<String> names = List.of("Peach", "Ginger", "Toby", "Seth", "Tibbles", "Tabby", "Poppy", "Millie", "Daisy", "Jasper", "Misty", "Minka");
     private final String name;

@@ -1,5 +1,7 @@
-package kz.attractor.java;
+package task2;
 
+import task2.ActiveCat;
+import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
@@ -11,6 +13,8 @@ public class Main {
         
         // каждый кот должен уметь выполнять что-то своё
         var cats = new ArrayList<ActiveCat>();
+
+
         cats.add(new ActiveCat(???));
         cats.add(new ActiveCat(???));
         cats.add(new ActiveCat(???));
