@@ -14,10 +14,9 @@ public final class ActiveCat {
     private static final Random r = new Random();
     private static final List<String> names = List.of("Peach", "Ginger", "Toby", "Seth", "Tibbles", "Tabby", "Poppy", "Millie", "Daisy", "Jasper", "Misty", "Minka");
     private final String name;
-    
-    private List<Random>list;
+    private final Actions action;
 
-    public ActiveCat(??? action) {
+    public ActiveCat(Actions action) {
         name = names.get(r.nextInt(names.size()));
         this.action = action;
     }
@@ -31,7 +30,6 @@ public final class ActiveCat {
     }
 
     /*****/
-    // Действия доступные для котов
 
     public static String jump() {
         return "Я прыгаю!";
@@ -44,5 +42,14 @@ public final class ActiveCat {
     public static String eat() {
         return "Я кушаю!";
     }
+
+    public static String play(){
+        return "Я хочу играть";
+    }
+
+    public static String ran(){
+        return "Я хочу бегаю";
+    }
+
     /*****/
 }
