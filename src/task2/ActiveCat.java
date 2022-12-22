@@ -44,11 +44,11 @@ public final class ActiveCat {
     }
 
     public static String play(){
-        return "Я хочу играть";
+        return "Я хочу играть!";
     }
 
     public static String ran(){
-        return "Я хочу бегаю";
+        return "Я хочу бегаю!";
     }
 
     /*****/
