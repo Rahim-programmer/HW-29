@@ -19,9 +19,18 @@ public class Main {
         cats.add(new ActiveCat(???));
         cats.add(new ActiveCat(???));
         // добавьте ещё два-три кота, с совершенно другими действиями
-
         cats.forEach(ActiveCat::doAction);
     }
+    public static String sleep(){
+        return "Я сплю ";
+    }
 
+    public static String ran(){
+        return "Я бегаю";
+    }
+
+    public static String play(){
+        return "Я играю";
+    }
 
 }

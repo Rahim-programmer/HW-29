@@ -1,7 +1,8 @@
 package task1;
 
-import task1.Printer;
-import task1.Cat;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class Main {
 
@@ -9,11 +10,19 @@ public class Main {
 
         var cats = Cat.makeCats(10);
         Printer.print(cats);
+        cats.sort(Comparator.comparing(Cat::getName));
+        Printer.print(cats);
 
-        // А сюда добавьте код, который будет сортировать коллекцию котов
-        // используйте лямбда-выражения и ссылки на методы
-        //cats.sort(?);
-        //Printer.print(cats);
+        cats.sort(Comparator.comparing(Cat::getAge));
+        Printer.print(cats);
+
+        cats.sort(Comparator.comparing(Cat::getBreed));
+        Printer.print(cats);
+
+        cats.sort(Comparator.comparing(Cat::getColor));
+        cats.removeIf(cats1 -> cats1.getColor().equals(Cat.Color.GRAY));
+        Printer.print(cats);
+        
     }
 
 

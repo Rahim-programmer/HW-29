@@ -15,7 +15,7 @@ public final class ActiveCat {
     private static final List<String> names = List.of("Peach", "Ginger", "Toby", "Seth", "Tibbles", "Tabby", "Poppy", "Millie", "Daisy", "Jasper", "Misty", "Minka");
     private final String name;
     
-    private ??? action;
+    private List<Random>list;
 
     public ActiveCat(??? action) {
         name = names.get(r.nextInt(names.size()));
