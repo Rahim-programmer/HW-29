@@ -22,7 +22,9 @@ public class Main {
         cats.sort(Comparator.comparing(Cat::getColor));
         cats.removeIf(cats1 -> cats1.getColor().equals(Cat.Color.GRAY));
         Printer.print(cats);
-        
+
+//        cats.sort(Comparator.comparing());
+
     }
 
 
